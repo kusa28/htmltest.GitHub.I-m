@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Example Web Page</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="font">
-        <h1>こんにちは、世界！</h1>
-        <p>これは最初のHTMLの例です。</p>
-        <p>abcdefghijklnmopqrstuvwxyz</p>
-    </div>
-  </body>
+<head>
+  <title>まる罰ゲーム</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ddd;
+    }
+    #game {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      border: 1px solid #999;
+    }
+    .ball {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .red-ball {
+      background-color: #f00;
+    }
+    .blue-ball {
+      background-color: #00f;
+    }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <div id="score">Score: 0</div>
+  </div>
+  <script src="game.js"></script>
+</body>
 </html>
